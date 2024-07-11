@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap&subset=latin,latin-ext');
+
+:root {
+    font-size: 14px;
+}
+
+body {
+    background-color: #293241;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cv {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main {
+    background-color: #FDFFFC;
+    box-sizing: border-box;
+    height: 100%;
+    width: 67%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main > img {
+    width: 100%;
+    margin: 2rem 0 0;
+}
+
+h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 2rem 0 1.5rem;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60%;
+    background-color: #011627;
+    margin: 1rem auto 0;
+}
+
+.description {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+    top: -32px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #FDFFFC;
+}
+
+.about {
+    margin-top: -20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.job, .school, .certificate {
+    line-height: 1.6em;
+    margin-bottom: 1rem;
+    border-left: 5px solid #011627;
+    padding-left: 1em;
+}
+
+.job:last-child, .school:last-child, .certificate:last-child{
+    margin-bottom: 0;
+}
+
+.job > div, .school > div, .certificate > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.school li {
+    list-style: disc inside;
+}
+
+h3 {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    position:relative;
+    width: max-content;
+}
+
+h3::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: #011627;
+    width: auto;
+}
+
+.data {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+}
+
+aside {
+    box-sizing: border-box;
+    background-color: #FDFFFC;
+    color: black;
+    height: 100%;
+    width: 33%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside > img {
+    display: block;
+    width: 75%;
+    border-radius: 50%;
+    margin: 3rem 0;
+}
+
+h2{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+h2::after {
+    position: absolute;
+    content: " ";
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: 0;
+    background-color: #011627;
+}
+
+main h2::after {
+    background-color: #011627;
+}
+
+.experience, .education {
+    border-bottom: 1px solid #011627;
+}
+
+section {
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #FDFFFC;
+    padding-top: 0;
+}
+
+.contact > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.6em;
+    margin-bottom: .5em;
+}
+
+.contact > div:last-child {
+    margin-bottom: 0;
+}
+
+.contact > div > p {
+    width: 83%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: rgb(190, 127, 8);
+}
+
+.skills, .languages {
+    border-bottom: 1px solid #FDFFFC;
+}
+
+.skills > ul > li, .interests > ul > li {
+    list-style-position: inside;
+    line-height: 1.25em;
+    margin-bottom: .5em;
+}
+
+.skills > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+dt {
+    display: list-item;
+    list-style: none inside;
+    font-weight: 700;
+    line-height: 1.6em;
+}
+
+dd{
+    display: inline-block;
+    margin-left: 1.5rem;
+    line-height: 1.6em;
+}
+
+footer {
+    color: gray;
+    text-align: center;
+    font-size: 10px;
+}
+
+.certificate > h3 {
+    text-transform: none;
+}
