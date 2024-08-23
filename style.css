@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap&subset=latin,latin-ext');
 
 :root {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 body {
@@ -21,7 +21,7 @@ main {
     background-color: #FDFFFC;
     box-sizing: border-box;
     height: 100%;
-    width: 67%;
+    width: 74%;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ h1::after {
     margin: 0 auto;
     padding: 0 1rem;
     position: relative;
-    top: -32px;
+    top: -28px;
     font-size: 1.5rem;
     text-align: center;
     background-color: #FDFFFC;
@@ -69,18 +69,18 @@ h1::after {
     letter-spacing: 1px;
 }
 
-.job, .school, .certificate {
+.job, .school, .certificate, .project {
     line-height: 1.6em;
     margin-bottom: 1rem;
     border-left: 5px solid #011627;
     padding-left: 1em;
 }
 
-.job:last-child, .school:last-child, .certificate:last-child{
+.job:last-child, .school:last-child, .certificate:last-child, .project:last-child{
     margin-bottom: 0;
 }
 
-.job > div, .school > div, .certificate > div {
+.job > div, .school > div, .certificate > div, .project > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -123,7 +123,7 @@ aside {
     background-color: #FDFFFC;
     color: black;
     height: 100%;
-    width: 33%;
+    width: 26%;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
@@ -160,13 +160,13 @@ main h2::after {
     background-color: #011627;
 }
 
-.experience, .education {
+.experience, .education, .projects {
     border-bottom: 1px solid #011627;
 }
 
 section {
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 }
 
 .contact {
